@@ -7,7 +7,8 @@ public class Cheers {
             String lettersToMatch = "AaEeFfHhIiLlMmNnOoRrSsXx";
 	    for (int i = 0; i < inputOfCheer.length(); i++) {
                 char inputInUpperCase = inputOfCheer.charAt(i);
-                Character.toUpperCase(inputInUpperCase);
+                inputInUpperCase = Character.toUpperCase(inputInUpperCase);
+                // Character.toUpperCase(inputInUpperCase);
                 if (lettersToMatch.indexOf(inputOfCheer.charAt(i))>=0) {
                     System.out.println("Give me an " + inputInUpperCase + ": " + inputInUpperCase + "!");
                 } else {
