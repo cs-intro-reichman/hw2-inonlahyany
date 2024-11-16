@@ -9,7 +9,7 @@ public class Collatz {
 			numberIsOne = 0;
 			while (numberIsOne!=1) {
 				if (modeOfVerbosity.equals("v")) {
-					System.out.print(" " + currentNumber);
+					System.out.print(currentNumber + " ");
 				}
 				if (currentNumber % 2 == 0) {
 					currentNumber = currentNumber/2;
@@ -20,7 +20,7 @@ public class Collatz {
 				numberIsOne = (currentNumber == 1 ? 1 : numberIsOne);
 			}
 			if (modeOfVerbosity.equals("v")) {
-				System.out.println(" " + currentNumber + " (" + numberOfSteps + ")");
+				System.out.println("" + currentNumber + " (" + numberOfSteps + ")");
 			}
 		}
 		System.out.println("Every one of the first " + seedNumByUser +" hailstone sequences reached 1.");
